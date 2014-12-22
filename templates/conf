@@ -1,0 +1,9 @@
+# {{ ansible_managed }}
+{{ item.location }}/*.log {
+  daily
+  missingok
+  rotate 7
+  compress
+  notifempty
+  nocreate
+}
