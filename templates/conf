@@ -6,4 +6,5 @@
   compress
   notifempty
   nocreate
+  copytruncate
 }

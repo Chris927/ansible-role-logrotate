@@ -1,4 +1,4 @@
 ---
 - name: provision logrotate config
-  template: src=conf dest=/etc/logrotate.d/{{ item.name }} mode=660 owner=root
+  template: src=conf dest=/etc/logrotate.d/{{ item.name }} mode=644 owner=root
   with_items: locations
